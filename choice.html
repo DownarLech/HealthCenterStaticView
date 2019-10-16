@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <!--  Flatpicker Styles  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/material_red.css">
+
+</head>
+
+
+<body>
+    <div id="wraper">
+        <header>
+            <div class="top-header">
+
+                <div class="space">
+                </div>
+
+                <div class="info-header">
+                    <i class="fas fa-phone-square">
+                        <span class="txt-info-header">+48 81 452 94 73</span>
+                    </i>
+                    <i class="fas fa-envelope">
+                        <a class="txt-info-header" href="mailto:recepcja@przychodnia.pl" target="_blank">recepction@healthcenter.com</a>
+                    </i>
+                </div>
+            </div>
+            <h1 class="h1-hd"><img src="img/LogoV2.png" /></h1>
+        </header>
+
+        <main>
+            <div class="big-container">
+                <header class="wyb-hd">
+                    <h1>Reservation</h1>
+                </header>
+                <form class="wyb-all">
+                    <fieldset>
+                        <legend>Make an appointment</legend>
+                        <!--
+                           <p class="wyb-kom">
+                            <label for="input-date">Wybierz datę</label>
+                            <input id="input-date" type="date" value="2014-10-31">
+                        </p>
+                        -->
+                        <p class="wyb-kom">
+                            <label>Choose date and time</label>
+                            <input type="text" id="basicDate" placeholder="date and time" data-input>
+                        </p>
+                        <p class="wyb-kom">
+                            <label for="user">Select a services</label>
+                            <select class="lekarz">
+                                <option value="internist">Internist</option>
+                                <option value="surgeon">Surgeon</option>
+                                <option value="dermatologist">Dermatologist</option>
+                                <option value="cardiologist">Cardiologist</option>
+                                <option value="laryngologist">Laryngologist</option>
+                                <option value="neurologist">Neurologist</option>
+                                <option value="orthopaedist">Orthopaedist</option>
+                                <option value="pediatrician">Pediatrician</option>
+                            </select>
+                        </p>
+                        <p class="wyb-kom">
+                            <label for="user">Choose a doctor</label>
+                            <select class="lekarz">
+                                <option value="doctor1">Doctor 1</option>
+                                <option value="doctor2">Doctor 2</option>
+                                <option value="doctor3">Doctor 3</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </form>
+                <div class="wyb-button">
+                    <input class="link" type="submit" name="login" class="login login-submit" value="Book now">
+                </div>
+            </div>
+
+            <aside>
+                <p class="dod-txt">
+                    <span>
+                        <b>Quality healthcare starts with quality doctors.</b></br>
+                    </span>
+                    We offer a wide range of health services and have a skilled and professional team who can help you to lead a more healthy life.
+                </p>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p><span class="podpis">Created with ❤️ by Lech ©</span></p>
+            <p><span>address: 20-150 Lublin ul.Bursaki 12</span></p>
+            <div class="icon-ft">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  Flatpickr  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pl.js"></script>
+
+    <script src="php/script.php"></script>
+</body>
+
+</html>
